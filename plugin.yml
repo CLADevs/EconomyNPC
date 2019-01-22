@@ -1,0 +1,10 @@
+name: EconomyNPC
+version: 1.0.0
+api: 3.0.0
+main: CLADevs\ENPC\Main
+author: CLADevs
+depend: ["EconomyAPI"]
+
+commands:
+  e:
+    description: "Economy NPC"
