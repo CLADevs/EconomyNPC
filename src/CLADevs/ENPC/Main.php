@@ -44,7 +44,6 @@ class Main extends PluginBase{
 			$npc->setNameTag(C::RED . "Unknown");
 			$npc->setNameTagAlwaysVisible(true);
 			$npc->spawnToAll();
-			var_dump($sender->getSkin());
 			break;
 			default:
 			$sender->sendMessage("Usage: /e <1:2:3>");
