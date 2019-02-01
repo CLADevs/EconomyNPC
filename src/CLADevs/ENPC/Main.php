@@ -18,7 +18,7 @@ class Main extends PluginBase{
 
 	public function onEnable(): void{
 		Entity::registerEntity(NPC::class, true);
-		$this->getLogger()->info(C::GREEN . "Everything is ready!");
+		$this->getLogger()->info("Everything is ready!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
