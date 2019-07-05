@@ -4,10 +4,14 @@
 
 ## Finished
  - [x] Checks
+ - [x] Spinable
 
 ## TODO
  - [ ] Skin
  - [ ] Config
+
+ ## Thanks
+ - SlapperRotation
 
  ## Need Help?
   Open an Issue [here](https://github.com/CLADevs/EconomyNPC/issues/new).

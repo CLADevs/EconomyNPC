@@ -41,13 +41,6 @@ class NPC extends Human{
 				}
 			}
 			$this->setNameTag(TextFormat::GRAY . $this->getPos() . ". " . TextFormat::WHITE . $this->getPlayer() . ": " . TextFormat::YELLOW . $this->eco->myMoney($this->getPlayer()));
-			#I fudged up skin xd help me by pull request
-			/*$nbt = $this->getLevel()->getServer()->getOfflinePlayerData($this->getPlayer());
-			$s = $nbt->getTag("Skin");
-			$skin = new Skin($s->getString("Name"), $s->getByteArray("Data"), $s->getByteArray("CapeData"), $s->getString("GeometryName"), $s->getByteArray("GeometryData"));
-			$s = $nbt->getTag("Skin");
-			$this->namedtag->setTag($s);
-			$this->spawnToAll();*/
 		}else{
 			$this->setNameTag(TextFormat::RED . "Unknown");
 		}
