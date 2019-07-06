@@ -11,7 +11,7 @@ use pocketmine\nbt\tag\StringTag;
 use pocketmine\plugin\Plugin;
 use pocketmine\utils\TextFormat;
 
-class NPC extends Human{
+class EconomyNPCEntity extends Human{
 
 	/** @var null|Plugin $eco */
 	protected $eco;
