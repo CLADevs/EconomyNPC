@@ -10,8 +10,5 @@
  - [ ] Skin
  - [ ] Config
 
- ## Thanks
- - SlapperRotation
-
  ## Need Help?
   Open an Issue [here](https://github.com/CLADevs/EconomyNPC/issues/new).
