@@ -11,7 +11,7 @@ use pocketmine\event\player\PlayerMoveEvent;
 use pocketmine\math\Vector2;
 use pocketmine\nbt\tag\IntTag;
 use pocketmine\nbt\tag\StringTag;
-use pocketmine\network\mcpe\protocol\MoveEntityAbsolutePacket;
+use pocketmine\network\mcpe\protocol\MoveActorAbsolutePacket;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\Entity;
@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener{
 		if($from->distance($to) < 0.1) return;
 		foreach($player->getLevel()->getNearbyEntities($player->getBoundingBox()->expandedCopy(10, 10, 10), $player) as $e){
 			if($e instanceof EconomyNPCEntity){
-				$pk = new MoveEntityAbsolutePacket();
+				$pk = new MoveActorAbsolutePacket();
 				$v = new Vector2($e->x, $e->z);
 				$pk->entityRuntimeId = $e->getId();
 				$pk->position = $e->asVector3()->add(0, 1.5, 0);
